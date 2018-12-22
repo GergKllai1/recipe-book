@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  toggle: string = 'none';
+
+  setToggle(event) {
+    this.toggle = event;
+  }
 }
