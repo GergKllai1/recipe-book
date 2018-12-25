@@ -18,8 +18,8 @@ export class ShoppingListEditComponent implements OnInit {
 
   addToIngredients() {
     this.ingredientInfo.emit({
-      name: this.ingredientName.nativeElement.value, 
-      amount: this.ingredientAmount.nativeElement.value})
+      name: this.ingredientName.nativeElement.value,
+      amount: this.ingredientAmount.nativeElement.value});
   }
 
 }

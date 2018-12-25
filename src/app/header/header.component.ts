@@ -15,8 +15,8 @@ export class HeaderComponent implements OnInit {
   }
 
   selectItem(choice: string) {
-    this.selectedItem.emit(choice)
+    this.selectedItem.emit(choice);
   }
-  
+
 
 }
