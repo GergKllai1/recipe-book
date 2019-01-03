@@ -1,6 +1,8 @@
+import { EventEmitter } from '@angular/core';
 import { Recipe } from './recipe.model';
 
 export class RecipeService {
+  recipeSelected = new EventEmitter<Recipe>();
   private recipes: Recipe[] = [
     new Recipe('A Test Recipe', 'This is a test for the recipe',
     // tslint:disable-next-line:max-line-length
@@ -8,6 +10,7 @@ export class RecipeService {
     new Recipe('Another Test Recipe', 'This is also just a test recipe, but another one!',
     'https://amp.businessinsider.com/images/5a7dc169d03072af008b4bf2-750-562.jpg')
   ];
+
 
   getRecipes() {
     return this.recipes.slice();
